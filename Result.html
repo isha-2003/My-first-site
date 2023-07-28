@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Entertainment</title>
+    <style>
+        footer{background-color:aquamarine;height:50px;}
+        header{background-color:azure;height:200px;}
+        nav ul li {display:inline; margin:15px;}
+    </style>
+    
+     
+     <script>
+        function jfun1()
+        {
+           // alert("Just for testing")
+           name=frml.t1.value;
+           var m=parseInt(frml.t2.value)
+           var e=parseInt(frml.t3.value)
+           var c=parseInt(frml.t4.value)
+           tmarks=m+e+c;
+           frml.t5.value=tmarks;
+           tavgmarks=(m+e+c)/3;
+           frml.t6.value=tavgmarks;
+           if(m>e && m>c)
+           {
+            max=m;
+           }
+           else if(e>m && e>c)
+           {
+            max=e;
+           }
+           else{
+            max=c;
+           }
+           frml.t7.value=max;
+
+
+           
+          
+
+           }
+                
+    </script>
+</head>
+   
+        <header style="background-image:url(Images/entertainment.jpg);">
+       
+        
+        <h1 style="background-color:purple"> ENTERTAINMENT</h1>
+        </header>
+
+
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="Dance.html">Dance</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="Registration.html">Registration</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Result.html">Result</a></li>
+        
+        
+    </ul>
+</nav>
+<center>
+    <div style="background-color:beige;border-radius:60px;width:100%">
+        <form name="frml" onsubmit="return jfun1()" action="thanks.html">
+        
+    
+       
+            <pre>
+                <table class="table table-striped">
+                    <head>
+                        <h3> STUDENT MARKS</h3>
+                    </head>
+                    <tr>
+                    
+                      
+       <td>NAME           <input type="text" name="t1" placeholder="Your Name Here"></td><br>
+                    </tr>
+                    <tr>
+        <td> Marks:</td>
+        <td> MATHS     <input type="text" name="t2" placeholder="Your Maths marks Here"></td><br>
+        <td> ENGLISH   <input type="text" name="t3" placeholder="Your English marks Here"></td><br>
+        <td> COMPUTER  <input type="text" name="t4" placeholder="Your Computer amrksHere"></td><br>
+                    </tr>
+                    <tr>
+         <td> Results:</td>
+        <td> TOTAL MARKS  <input type="text" name="t5"></td><br>
+        <td> %MARKS       <input type="text" name="t6"></td><br>
+        <td> MAX MARKS    <input type="text" name="t7"></td><br>
+                    </tr>
+                    
+        <input type="button" value="Results" onclick="jfun1()">
+                    
+            </pre>
+        </form>
+    
+    
+    
+    
+    </div>
+    </center>
+    <br>
+    <br>     
+    </body>
+    </html>
